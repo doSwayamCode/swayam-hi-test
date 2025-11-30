@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>swayam</title>
+</head>
+
+<body>
+
+    <h1>Hi there how are you?</h1>
+    <input type="radio" name="gender" value="male"> I am fine
+    <input type="radio" name="gender" value="female"> I am not fine
+    <button type="button" onclick="showPhoto()">Submit</button>
+    <br><br>
+    <img id="displayImage" src="" alt="hi" style="display:none; max-width: 300px;">
+
+    <script>
+        function showPhoto() {
+            const img = document.getElementById('displayImage');
+            // You can replace 'placeholder.jpg' with the path to your photo
+            img.src = 'download.jpg';
+            img.style.display = 'block';
+        }
+    </script>
+</body>
+
+</html>
